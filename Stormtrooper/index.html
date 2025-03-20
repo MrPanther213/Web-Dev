@@ -18,9 +18,29 @@
        Email: <input id="email"><br> <!-- Hint: Add the type you want the form field to be here. Oof... what should an email be?-->
        Feedback Message: <textarea id="message"></textarea><br> <!-- Hint: Add the type you want the form field to be here. Textarea?-->
        <button >Submit</button> <!-- Hint: What type of button should this be?-->
+       <p id="error"></p> <!-- Hint: Where should the error message be displayed?-->
+      <p id="success"></p> <!-- Hint: Where should the success message be displayed?-->
+      <p id="form-submitted-message">Form submitted successfully!</p> <!-- Hint: Where should the success message be displayed when the form is submitted?-->
+   <script src="script.js"></script> <!-- Hint: Where should the JavaScript code be located?-->
+   <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
    </form>
+ <script src="clear-success-message.js"></script> <!-- Hint: Where should the clear success message code be located?-->
+ <script src="clear-form-reset.js"></script> <!-- Hint: Where should the clear form reset code be located?-->
+ <script src="clear-clear-error-message.js"></script> <!-- Hint: Where should the clear clear error message code be located?-->
+ <script src="clear-clear-success-message.js"></script> <!-- Hint: Where should the clear clear success message code be located?-->
+ <script src="clear-clear-form-submitted-message.js"></script> <!-- Hint: Where should the clear clear form submitted message code be located?--
+ <script src="clear-form-submitted-message.js"></script> <-- Hint: Where should the clear form submitted message code be located?-->
+ <script src="clear-form-reset.js"></script> <!-- Hint: Where should the clear form reset code be located?-->
+ <script src="clear-clear-error-message.js"></script> <!-- Hint: Where should the clear clear error message code be located?-->
+ <script src="clear-clear-success-message.js"></script> <!-- Hint: Where should the clear clear success message code be located?-->
+ <script src="clear-clear-form-submitted-message.js"></script> <!-- Hint: Where should the clear clear form submitted message code be located?-->
+</html>
 
-
-   <script src="script.js"></script>
+<!-- Hint: Add your EmailJS configuration here -->
+<script>
+  (function() {
+    emailjs.init("YOUR_SERVICE_ID");
+  })();
+</script>
 </body>
 </html>
